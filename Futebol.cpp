@@ -12,7 +12,7 @@
 #include "Posicoes.h"
 #include "Serial.h"
 
-#define VIDEO
+//#define VIDEO
 
 #ifdef VIDEO	// so tem sentido usa o SALVA no ARQ se esta capturando VIDEO
 //#define SALVA_ARQ "imgJogoReal5.png"
@@ -45,6 +45,7 @@ bool emPenalidade = false;
 bool emPosiciona = false;
 bool emInicio = false;
 bool tiroMeta = false;
+bool emSimulacao = false;
 
 Objetivo objetivoRobo[NUM_ROBOS_TIME];
 bool chuteGirando[NUM_ROBOS_TIME];

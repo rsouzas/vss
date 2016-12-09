@@ -7,29 +7,20 @@
  * Se qualquer publicação for gerada pela utilização de software utilizando parcial ou integralmente ESTE software, esta publicação deve conter os devidos créditos para o "Grupo de Integração de Sistemas e Dispositivos Inteligentes (GISDI) do Departamento de Computação da Faculdade de Ciências da Universidade Estadual Paulista (UNESP) - Campos de Bauru - SP - Brasil"
  */
 
-#ifndef SERIAL_H_
-#define SERIAL_H_
+#ifndef SIMULADOR_H_
+#define SIMULADOR_H_
 
-#include <fcntl.h>
-#include <termios.h>
-#include <sys/ioctl.h>
+#include <math.h>
+#include "TiposClasses.h"
+#include "Auxiliares.h"
+#include "Estrategia.h"
 
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
+//#define RANDOMICO
 
-//#define SERIAL
-#define NUM_ROBOS_TIME 3
+#define TAM_HISTORIA 50 // tem que ser o maior entre TEMPO_ATRASO e TAM_INERCIA
+#define TEMPO_ATRASO 0
+#define TAM_INERCIA 1
 
-void iniciaComunicacao(void);
+void Simulador(void);
 
-int recebeByte();
-
-void enviaByteEspera(int);
-
-void enviaDados(unsigned char b1, unsigned char b2, unsigned char b3,
-		unsigned char b4, unsigned char b5, unsigned char b6);
-
-void terminaComunicacao(void);
-
-#endif /* SERIAL_H_ */
+#endif
