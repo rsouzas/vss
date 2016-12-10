@@ -1,5 +1,5 @@
-# vss-camera
-Código do time Carrossel Caipira com câmera.
+# vss
+Repositório do time Carrossel Caipira.
 
 Instalação do ambiente:
         
