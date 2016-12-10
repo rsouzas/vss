@@ -18,7 +18,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 
-//#define SERIAL
+#define SERIAL
 #define NUM_ROBOS_TIME 3
 
 void iniciaComunicacao(void);

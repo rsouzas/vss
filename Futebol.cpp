@@ -12,7 +12,7 @@
 #include "Posicoes.h"
 #include "Serial.h"
 
-//#define VIDEO
+#define VIDEO
 
 #ifdef VIDEO	// so tem sentido usa o SALVA no ARQ se esta capturando VIDEO
 //#define SALVA_ARQ "imgJogoReal5.png"
