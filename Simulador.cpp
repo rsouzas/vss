@@ -407,7 +407,6 @@ void Simulador(void) {
 		}
 
 		estrategia();
-
 		for (j = 0; j < 30; j++) {
 			for (i = 0; i < 7; i++) {
 				estado[i].x = estadoReal[i].x;
@@ -445,7 +444,7 @@ void Simulador(void) {
 	{
 		if (i < 3)
 		{
-			if (i == indAtacante && (abs(estado[indAtacante].x - estado[3].y) < 4) && (abs(estado[indAtacante].y - estado[3].y) < 4)) {
+			if (i == indAtacante && (abs(estado[indAtacante].x - estado[3].x) < 4) && (abs(estado[indAtacante].y - estado[3].y) < 4)) {
 				objetivoRobo[i].x = estado[i].x;
 				objetivoRobo[i].y = estado[i].y;
 				objetivoRobo[i].angulo = estado[i].angulo;
