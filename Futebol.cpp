@@ -45,7 +45,6 @@ bool emPenalidade = false;
 bool emPosiciona = false;
 bool emInicio = false;
 bool tiroMeta = false;
-bool emSimulacao = false;
 
 Objetivo objetivoRobo[NUM_ROBOS_TIME];
 bool chuteGirando[NUM_ROBOS_TIME];

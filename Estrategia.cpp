@@ -10,7 +10,6 @@
 #include "TiposClasses.h"
 #include "Auxiliares.h"
 #include "Controle.h"
-#include "Simulador.h"
 //#include "Serial.h"
 
 #define SEM_PREVISAO
@@ -26,7 +25,6 @@ extern bool tiroMeta;
 extern bool emPenalidade;
 extern bool emPosiciona;
 extern bool emInicio;
-extern bool emSimulacao;
 
 extern Objetivo objetivoRobo[NUM_ROBOS_TIME];
 // extern bool chuteGirando[NUM_ROBOS_TIME];
@@ -762,9 +760,6 @@ void estrAtacante(bool chuteGirando[]) {
 			dxBola, dyBola, velObjetivo, angObjetivo;
 	float dxBG, dyBG, dxBO, dyBO, dxBR, dyBR, m, distBola;
 	float yAlinhamentoRoboBolaGol;
-
-	if (!emSimulacao && emJogo)
-		Simulador();
 
 	xBola = estadoPrev[IND_BOLA].x;
 	yBola = estadoPrev[IND_BOLA].y;
